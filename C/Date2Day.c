@@ -6,8 +6,8 @@
 
 int main()
 {
-	int q, m, y, k, j, h;
-	char month[4];
+	int q, m = 0, y, k, j, h ,ty;
+	char month[12];
 	/* Date*/
 	printf("\n\tEnter the date:");
 	scanf("%d", &q);
@@ -16,44 +16,42 @@ int main()
 	scanf("%d", &y);
 	/* Month */
 	printf("\n\tEnter the month name:");
-	scanf("%s", &month);
-	if (strcmp(month, "March")==0)
-		m=3;
-	else if (strcmp(month, "April")==0)
-		m=4;
-	else if (strcmp(month, "May")==0)
-		m=5;
-	else if (strcmp(month, "June")==0)
-		m=6;
-	else if (strcmp(month, "July")==0)
-		m=7;
-	else if (strcmp(month, "August")==0)
-		m=8;
-	else if (strcmp(month, "September")==0)
-		m=9;
-	else if (strcmp(month, "October")==0)
-		m=10;
-	else if (strcmp(month, "November")==0)
-		m=11;
-	else if (strcmp(month, "December")==0)
-		m=12;
-	else if (strcmp(month, "January")==0)
+	scanf("%s", month);
+	char *months[] = {
+		"March", "April", "May", "June", "July", 
+		"August", "September", "October", "November", "December", 
+		"January", "February"
+	};
+
+	for (int i = 0; i < 12; i++) 
 	{
-		m=12;
-	}
-	else if (strcmp(month, "February")==0)
+			if (strcmp(month, months[i]) == 0) {
+				m = i+3;
+				break;
+			}
+		}
+
+	if (m == 0) 
 	{
-		m=15;
+			printf("\n\tInvalid Month Name! Try again.\n");
+			return 0;
 	}
-	else
-		printf("Invalid Month Name");
+	if(m==13 || m==14)
+	{
+		y--;
+	}
 	
 	k=y%100;
 	j=y/100;
 	
 	/** Zeller's Formula **/
-	h=(q+((13*(m+1))/5)+k+(k/4)+(j/4)-5*j)%7;
+	h = (q + ((13*(m+1))/5) + k + (k/4) + (j/4) - 2*j + 700) % 7;
 	// system("cls");
+    
+	if(m==13 || m==14)
+	{
+		y++;
+	}
 	
 	switch(h)
 	{
