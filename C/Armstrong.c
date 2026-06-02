@@ -1,62 +1,54 @@
 /** Armstrong Number Identifier **/
-
+#include<stdio.h>
 #include<stdlib.h>
-
 
 int main()
 {
-	int n, no, k, s=0;
+	int n, no =0, k , s=0, t,d;
 	
 	printf("Enter any number:");
 	scanf("%d", &n);
-	no=n;
+	t = n;
 	
-	if(no<=999)
-	{
-		while(no!=0)
-		{
-			k=no%10;
-			s=s+k*k*k;
-			no=no/10;
-		}
-	}
-	
-	else if(no<0)
+	if(n<0)
 	{
 		printf("Please enter a positive number.");
+		return 0;
 	}
-	
-	else if((no<9999)& (no>999))
-	{
-		while(no!=0)
+		
+	while(t!=0)
 		{
-			k=no%10;
-			s=s+k*k*k*k;
-			no=no/10;
+			t/=10;
+			no++;
+		}
+     t = n;
+	
+	if(t<=99999)
+	{
+		while(t!=0)
+		{
+			k=t%10;
+			d = k;
+			for(int i=1; i<no; i++)
+				{
+					k*=d;
+				}
+			s+=k;
+			t=t/10;
 		}
 	}
-	
-	else if((no<99999)& (no>9999))
-	{
-		while(no!=0)
-		{
-			k=no%10;
-			s=s+k*k*k*k*k;
-			no=no/10;
-		}
-	}
-	
+		
 	else
 	{
-		printf("Sorry, I can't check it.");
+		printf("Come on, why are you even checking for that big of a number ;(");
 	}
 	
-	if(n=s)
+	if(n == s)
 	{
 		printf("%d is an armstrong number.", n);
 	}
 	
-	if((n!=s)&(n<99999))
+	else
 	{
 		printf("%d is not an armstrong number.", n);
 	}
