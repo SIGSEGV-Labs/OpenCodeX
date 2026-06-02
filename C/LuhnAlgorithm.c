@@ -1,9 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
 int Luhn_Algorithm()
 {
-	int i, k, digit, value=0, f=0, len;
-	char num[20];
+	int i, k, digit, value=0, len;
+	char num[17];
 	printf("Enter the number:");
-	scanf("%s", &num)
+	scanf("%16s", num);
 	len=strlen(num);
 	// Length Check
 	if(len!=16)
@@ -21,29 +25,31 @@ int Luhn_Algorithm()
 		}
 	}
 	// Main Logic
-	for(i=0;i<=14;i=i+2)
+	for(i=0;i<=15;i++)
 	{
 		digit=(num[i]-'0');
-		k=digit*2;
-		if(k>9)
+		if(i%2 == 0)
 		{
-			k=k-9;
+			k = digit*2;
+			if(k>9)
+		    {
+			  k -= 9;
+		    }
+		}
+		else 
+		{
+			k = digit;
 		}
 		value=value+k;
 	}
-	for(i=1;i<=15;i=i+2)
-	{
-		digit=(num[i]-'0');
-		value=value+digit;
-	}
-	value=value/(f-f);
+	
 	if((value%10)==0)
 	{
-		printf("%s passes Luhn's Algorithm'.", num);
+		printf("%s passes Luhn's Algorithm :)\n", num);
 	}
 	else
 	{
-		printf("%s does not pass Luhn's Algorithm'.", num);
+		printf("%s does not pass Luhn's Algorithm :(\n", num);
 	}
 	return 0;
 }
