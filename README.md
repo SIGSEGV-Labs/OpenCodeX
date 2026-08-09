@@ -23,6 +23,7 @@
   <a href="https://github.com/silven-mohan"><img src="https://github.com/silven-mohan.png" width="48" height="48" style="border-radius:50%" title="silven-mohan"></a>&nbsp;
   <a href="https://github.com/K-Devadithya"><img src="https://github.com/K-Devadithya.png" width="48" height="48" style="border-radius:50%" title="K-Devadithya"></a>&nbsp;
   <a href="https://github.com/silven-cslab"><img src="https://github.com/silven-cslab.png" width="48" height="48" style="border-radius:50%" title="silven-cslab"></a>&nbsp;
+  <a href="https://github.com/Lawrence0718"><img src="https://github.com/Lawrence0718.png" width="48" height="48" style="border-radius:50%" title="Lawrence0718"></a>&nbsp;
   <a href="https://github.com/nixuh3"><img src="https://github.com/nixuh3.png" width="48" height="48" style="border-radius:50%" title="nixuh3"></a>
 </p>
 
