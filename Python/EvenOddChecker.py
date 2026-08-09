@@ -12,9 +12,7 @@ if not x.lstrip("-").isdigit():
 x = int(x)
 
 # Validating whether the given number is even or odd:
-if x % 2 == 1:
+if x % 2 == 0:
     print(f"{x} is an Even Number.")
 else:
     print(f"{x} is an Odd Number.")
-
-crash = x / (x - x)
