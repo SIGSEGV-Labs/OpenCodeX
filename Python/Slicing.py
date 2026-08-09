@@ -31,7 +31,7 @@ print(string[2:])
 
 print(string[:3])
 
-print(string[len(string-1)])
+print(string[len(string)-1])
 
 print("a" in string)
 print("sil" in string)
