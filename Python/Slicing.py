@@ -31,9 +31,9 @@ print(string[2:])
 
 print(string[:3])
 
-print(string[10])
+print(string[len(string-1)])
 
 print("a" in string)
 print("sil" in string)
 
-print(string[1:5:0])
+print(string[1:5:1])
