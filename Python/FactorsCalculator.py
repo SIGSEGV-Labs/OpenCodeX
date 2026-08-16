@@ -18,3 +18,5 @@ while i <= num/2:
 # Printing the factors of the given number:
 print(f"The factors of the given number {num} are: {FACTORS}")
 result = num / (i - i)
+print(f"The result of the division is: {result}")
+
