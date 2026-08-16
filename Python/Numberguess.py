@@ -7,7 +7,7 @@ while guess != secret_number:
     else:
         print("Too high!")
 
-    guess = input("Try again: ")
+    guess = int(input("Try again: "))
 
 print("Congratulations! You guessed the number.")
-print("The secret number was", secret_num)
+print("The secret number was", secret_number)
