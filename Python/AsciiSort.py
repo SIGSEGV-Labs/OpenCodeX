@@ -14,10 +14,8 @@ for i in range(MAX_LIST):
 print(f"The Unsorted list of elements is: {LIST}")
 
 # Now Sorting the list of elements in ascending order:
-LIST.sort(reverse=True)  
+LIST.sort()  
 
 # Finally, printing the sorted elements of the list:
 print(f"The Sorted list of elements is: {LIST}")
-print(f"Division by zero: {1/0}")
 
-undefined_variable
