@@ -25,7 +25,7 @@
   <a href="https://github.com/silven-cslab"><img src="https://github.com/silven-cslab.png" width="48" height="48" style="border-radius:50%" title="silven-cslab"></a>&nbsp;
   <a href="https://github.com/Lawrence0718"><img src="https://github.com/Lawrence0718.png" width="48" height="48" style="border-radius:50%" title="Lawrence0718"></a>&nbsp;
   <a href="https://github.com/jvsdvarshini"><img src="https://github.com/jvsdvarshini.png" width="48" height="48" style="border-radius:50%" title="jvsdvarshini"></a>&nbsp;
-  <a href="https://github.com/swejo-7208"><img src="https://github.com/swejo-7208.png" width="48" height="48" style="border-radius:50%" title="swejo-7208"></a>&nbsp;
+  <a href="https://github.com/swejo7208-lab"><img src="https://github.com/swejo7208-lab.png" width="48" height="48" style="border-radius:50%" title="swejo7208-lab"></a>&nbsp;
   <a href="https://github.com/chandramoulilokavarapu-spec"><img src="https://github.com/chandramoulilokavarapu-spec.png" width="48" height="48" style="border-radius:50%" title="chandramoulilokavarapu-spec"></a>&nbsp;
   <a href="https://github.com/nixuh3"><img src="https://github.com/nixuh3.png" width="48" height="48" style="border-radius:50%" title="nixuh3"></a>
 </p>
