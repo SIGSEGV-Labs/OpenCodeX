@@ -15,8 +15,11 @@ while i <= num/2:
         FACTORS.append(i)
     i += 1
 
+if num>0:
+    FACTORS.append(num)
+
 # Printing the factors of the given number:
 print(f"The factors of the given number {num} are: {FACTORS}")
-result = num / (i - i)
-print(f"The result of the division is: {result}")
+
+
 
